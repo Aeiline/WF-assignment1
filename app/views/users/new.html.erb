@@ -11,19 +11,19 @@
             <%= f.text_field :surname %>
             
             <%= f.label :age %>
-            <%= f.text_field :age %>
+            <%= f.number_field :age %>
             
             <%= f.label :email %>
-            <%= f.text_field :email %>
+            <%= f.email_field :email %>
             
-            <%= f.label :homeaddr %>
-            <%= f.text_field :homeaddr %>
+            <%= f.label :home_address %>
+            <%= f.text_field :home_address %>
             
             <%= f.label :password %>
-            <%= f.text_field :password %>
+            <%= f.password_field :password %>
             
             <%= f.label :password_confirmation, "Confirmation" %>
-            <%= f.text_field :password_confirmation %>
+            <%= f.password_field :password_confirmation %>
             
             <%= f.submit "Create my account", class: "btn btn-primary" %>
         <% end %>

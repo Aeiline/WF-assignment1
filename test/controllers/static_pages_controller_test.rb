@@ -25,8 +25,9 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get signup" do
-    get :signup
+  test "should get access_denied" do
+    get :access_denied
+    assert_select "title", "Access Denied | Ruby on Rails Tutorial Sample App"
     assert_response :success
   end
   
